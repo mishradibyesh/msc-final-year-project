@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <title>covid management system</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/logo1.jpg" type="image/x-icon">
+    <style>
+        .myForm {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 0.8em;
+            width: 30em;
+            padding: 1em;
+            border: 1px solid #ccc;
+        }
+        
+        .myForm * {
+            box-sizing: border-box;
+        }
+        
+        .myForm fieldset {
+            border: none;
+            padding: 0;
+        }
+        
+        .myForm legend,
+        .myForm label {
+            padding: 0;
+            font-weight: bold;
+        }
+        
+        .myForm label.choice {
+            font-size: 0.9em;
+            font-weight: normal;
+        }
+        
+        .myForm label {
+            text-align: left;
+            display: block;
+        }
+        
+        .myForm input[type="text"],
+        .myForm input[type="tel"],
+        .myForm input[type="email"],
+        .myForm input[type="datetime-local"],
+        .myForm select,
+        .myForm textarea {
+            float: right;
+            width: 40%;
+            border: 1px solid #ccc;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 0.9em;
+            padding: 0.3em;
+        }
+        
+        .myForm textarea {
+            height: 80px;
+        }
+        
+        .myForm input[type="radio"],
+        .myForm input[type="checkbox"] {
+            margin-left: 40%;
+        }
+        
+        .myForm button {
+            padding: 1em;
+            border-radius: 0.5em;
+            background: #eee;
+            border: none;
+            font-weight: bold;
+            margin-left: 40%;
+            margin-top: 1.8em;
+        }
+        
+        .myForm button:hover {
+            background: #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+    <div id="navbar">
+        <ul>
+            <img id="img" src="img/animation.gif" alt="logo">
+            <li id="logo">COMBAT COVID-19 </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="symptoms.html">SYMPTOMS</a></li>
+            <li><a href="prevention.html">PREVENTION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a id="home" href="index.html">HOME</a></li>
+
+        </ul>
+        <div id="marq">
+            <marquee direction="left">
+                Self protection is the best technique to fight Corona Virus!
+            </marquee>
+        </div>
+        <div id="c">
+            <p>fill this form to get in touch with us </p>
+        </div>
+
+        <div class="container">
+            <form action="details.php" method="POST">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..  " required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="country">Country</label>
+
+                <input type="text" id="country" name="country" placeholder="Your country name.." required>
+
+
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Your mobile no.. " required>
+                <label for="address">Your Complete Address</label>
+                <input type="text" id="address" name="address" placeholder="Your address.." required>
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" placeholder="Your  email address.." required><br><br>
+                <label for="SYMPTOMS">Symptoms</label>
+                <textarea id="symptoms" name="symptoms" placeholder="Mention all symptoms like dry cough , fever , Fatigue etc..." style="height:50px" required></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <footer id="footer">
+            <p>Designed By: Dibyesh Mishra<br>
+                <a href="mailto:dibyeshmishra207@gmail.com">dibyeshmishra207@gmail.com</a></p>
+            <a href="https://www.linkedin.com/in/dibyesh-mishra-7a5509194/"> <img id="footimg" src="img/linkdin.png" alt="logo"> </a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
